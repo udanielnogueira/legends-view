@@ -23,7 +23,7 @@
 
 <img src="./assets/img/desktop-mockup.png">
 
-O Legends View é uma aplicação responsiva que permite visualizar as classes e campeões do aclamando e mundialmente conhecido League of Legends, selecione uma classe e veja os campeões de Runeterra que batalham em Summoner's Rift.
+O Legends View é uma aplicação que permite visualizar as classes e campeões do aclamado e mundialmente conhecido League of Legends, selecione uma classe e veja os campeões de Runeterra que batalham em Summoner's Rift.
 
 <h2 id="preview">Preview</h2>
 
