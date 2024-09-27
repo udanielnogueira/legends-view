@@ -221,7 +221,7 @@ function share() {
       .share({
         title: "Legends View",
         text: "A nova galeria de campeões do LoL!",
-        url: "https://udanielnogueira.github.io/champions-js/",
+        url: "https://udanielnogueira.github.io/legends-view/",
       })
       .then(() => console.log("Successful share"))
       .catch((error) => console.log("Error sharing", error));
