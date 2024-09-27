@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Champions JS</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <a href="./index.html">
+          <p class="logo">
+            <span class="--gradient-text">⚔️</span>
+            Legends View
+          </p>
+        </a>
+        <nav>
+          <ul>
+            <a href="./index.html"><li>Home</li></a>
+            <a href="#galeria"> <li>Galeria</li></a>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <span class="hero__count --gradient-text"
+          >◉ 22 campeões disponíveis</span
+        >
+
+        <h1 class="hero__headline">
+          A galeria de campeões de
+          <span class="--gradient-text">League of Legends</span>
+        </h1>
+
+        <p class="hero__text">
+          Visualize os campeões do LoL e suas diferentes classes.
+        </p>
+
+        <div class="hero__btns">
+          <a href="#galeria" class="btn">Ver campeões</a>
+          <a href="javascript:void(0)" onclick="share()" class="btn">
+            Compartilhar App
+          </a>
+        </div>
+      </section>
+
+      <section id="galeria" class="galeria">
+        <h2 class="galeria__title">Galeria</h2>
+        <section class="classesBtns">
+          <div
+            class="classesBtns__btn --adc"
+            onclick="exibirAdc(), playUIClick()"
+          >
+            Atirador
+          </div>
+          <div
+            class="classesBtns__btn --suporte"
+            onclick="exibirSuporte(), playUIClick()"
+          >
+            Suporte
+          </div>
+          <div
+            class="classesBtns__btn --mago"
+            onclick="exibirMago(), playUIClick()"
+          >
+            Mago
+          </div>
+          <div
+            class="classesBtns__btn --assassino"
+            onclick="exibirAssassino(), playUIClick()"
+          >
+            Assassino
+          </div>
+          <div
+            class="classesBtns__btn --lutador"
+            onclick="exibirLutador(), playUIClick()"
+          >
+            Lutador
+          </div>
+          <div
+            class="classesBtns__btn --tank"
+            onclick="exibirTank(), playUIClick()"
+          >
+            Tank
+          </div>
+        </section>
+
+        <section class="championImgs">
+          <p>Selecione uma classe</p>
+        </section>
+
+        <section class="championsBtns"></section>
+      </section>
+
+      <footer>
+        <p>Legends View 2024 Todos os direitos reservados</p>
+        <p>
+          Desenvolvido por
+          <a
+            href="https://www.linkedin.com/in/udanielnogueira/"
+            target="_blank"
+            title="LinkedIn"
+            >udanielnogueira</a
+          >
+        </p>
+      </footer>
+    </div>
+    <script src="./assets/script/data.js"></script>
+    <script src="./assets/script/main.js"></script>
+  </body>
+</html>

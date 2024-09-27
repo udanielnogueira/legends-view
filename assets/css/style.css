@@ -1,0 +1,396 @@
+:root {
+  font-size: 62.5%;
+  --bg-color: #101010;
+  --text-color: #f4f4f4;
+  --dark-color-1: #181818;
+  --dark-color-2: #242424;
+
+  /* Tailwind 300 */
+  --cor-adc: #fdba74;
+  --cor-mago: #93c5fd;
+  --cor-tank: #d8b4fe;
+  --cor-lutador: #fde047;
+  --cor-suporte: #6ee7b7;
+  --cor-assassino: #fca5a5;
+
+  --gradient-right: linear-gradient(to right, #f86ca7, #f4d444);
+  --gradient-top-right: linear-gradient(to top right, #f86ca7, #f4d444);
+
+  --box-shadow-gray: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.1),
+    0 0.4rem 0.4rem rgba(0, 0, 0, 0.1), 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1),
+    0 0 0 0.1rem rgba(0, 0, 0, 0.1),
+    inset 0 0 0 0.1rem rgba(255, 255, 255, 0.03),
+    inset 0 0.1rem 0 rgba(255, 255, 255, 0.03);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--text-color);
+  font: 1.6rem "Space Grotesk";
+  background-color: var(--bg-color);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0rem 1.6rem;
+}
+
+.--gradient-text {
+  color: transparent;
+  background-clip: text;
+  background-image: var(--gradient-right);
+}
+
+.btn {
+  all: unset;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 400;
+  font-size: 1.4rem;
+  border-radius: 0.4rem;
+
+  background: var(--gray);
+  color: var(--text-color);
+
+  height: 4rem;
+  width: 16rem;
+  cursor: pointer;
+
+  transition: all 240ms linear;
+  box-shadow: var(--box-shadow-gray);
+}
+
+.btn:first-of-type {
+  font-weight: 700;
+  color: var(--bg-color);
+}
+
+.btn:hover {
+  background-color: var(--dark-color-1);
+}
+
+/* Header */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 8rem;
+  max-width: 96rem;
+  margin-bottom: 12.8rem;
+  border-bottom: solid 0.16rem var(--dark-color-2);
+}
+
+header ul {
+  gap: 1.6rem;
+  display: flex;
+  list-style-type: none;
+}
+
+header li:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  font-weight: 400;
+  font-size: 1.6rem;
+  /* animation: moving 1.6s ease-in-out alternate infinite; */
+}
+
+/* Hero */
+
+@keyframes moving {
+  from {
+    transform: translateY(-0.64rem);
+  }
+  to {
+    transform: translateY(0.64rem);
+  }
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10.8rem;
+  gap: 4rem;
+}
+
+.hero__count {
+  font-weight: 700;
+  font-size: 1.4rem;
+  border-radius: 2.4rem;
+  padding: 0.4rem 1.6rem;
+  border: 0.1rem solid var(--dark-color-2);
+}
+
+.hero__headline {
+  font-weight: 700;
+  font-size: 6.4rem;
+  text-align: center;
+  line-height: 6.4rem;
+  max-width: 96rem;
+}
+
+.hero__text {
+  font-weight: 300;
+  max-width: 96rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.hero__btns {
+  gap: 0.8rem;
+  display: flex;
+}
+
+.hero__btns a:first-of-type {
+  background: var(--gradient-top-right);
+}
+
+.hero__btns a:first-of-type:hover {
+  background: var(--gradient-right);
+}
+
+/* Galeria */
+
+.galeria {
+  padding-top: 2rem;
+  margin-bottom: 12.8rem;
+}
+
+.galeria__title {
+  flex-wrap: wrap;
+  font-weight: 400;
+  font-size: 3.2rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+/* Classes Btns */
+
+.classesBtns {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+  text-align: center;
+  gap: 0.8rem;
+}
+
+.classesBtns__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+  height: 3.2rem;
+  cursor: pointer;
+  font-weight: 300;
+  padding: 0 1.6rem;
+  user-select: none;
+  font-size: 1.4rem;
+  border-radius: 0.4rem;
+  transition: ease 400ms;
+  box-shadow: var(--box-shadow-gray);
+}
+
+.classesBtns__btn:hover {
+  transform: translateY(-0.64rem);
+}
+
+/* Champions Btns */
+
+.championsBtns {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.championsBtns__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+  height: 3.2rem;
+  cursor: pointer;
+  font-weight: 300;
+  padding: 0 1.6rem;
+  user-select: none;
+  font-size: 1.4rem;
+  border-radius: 0.4rem;
+  transition: ease 320ms;
+  box-shadow: var(--box-shadow-gray);
+}
+
+.championsBtns__btn:hover {
+  transform: translateY(-0.64rem);
+}
+
+.active {
+  font-weight: 700;
+  color: var(--bg-color);
+  background: var(--gradient-right);
+}
+
+/* Champion Images */
+
+.championImgs {
+  height: 56rem;
+  display: flex;
+  font-weight: 300;
+  font-size: 1.6rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 80rem;
+  margin-bottom: 4rem;
+}
+
+.championImgs__img {
+  height: 97%;
+  padding-bottom: 2.4rem;
+  animation: up-down 1.2s ease-in-out infinite alternate;
+}
+
+.championImgs__bio {
+  height: 3%;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes up-down {
+  from {
+    transform: translateY(-0.8rem);
+  }
+  to {
+    transform: translateY(0.8rem);
+  }
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 8rem;
+  width: 100%;
+  font-size: 1.4rem;
+  max-width: 96rem;
+  font-weight: 300;
+  border-top: solid 0.16rem var(--dark-color-2);
+}
+
+footer a {
+  color: var(--purple);
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 468px) {
+  header,
+  .galeria {
+    margin-bottom: 9.6rem;
+  }
+
+  .hero {
+    gap: 2.4rem;
+    margin-bottom: 7.6rem;
+  }
+
+  .hero__headline {
+    font-size: 2.4rem;
+    line-height: unset;
+  }
+
+  .hero__count {
+    font-size: 1.2rem;
+  }
+
+  .hero__text {
+    font-size: 1.6rem;
+  }
+
+  .championImgs__img {
+    height: unset;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .btn {
+    height: 4rem;
+    width: 16rem;
+    font-size: 1.4rem;
+  }
+
+  .classesBtns {
+    margin-bottom: 2.4rem;
+  }
+
+  .galeria__title {
+    font-size: 1.8rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .championImgs {
+    height: 48rem;
+    max-width: unset;
+  }
+
+  .championImgs__img {
+    max-height: 95%;
+  }
+
+  .championImgs p {
+    font-size: 1.4rem;
+  }
+
+  .championImgs__bio {
+    font-size: 1.4rem;
+    height: 5%;
+  }
+
+  header,
+  .logo {
+    font-size: 1.4rem;
+  }
+
+  footer {
+    font-size: 1.2rem;
+  }
+}
