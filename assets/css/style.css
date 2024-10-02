@@ -299,7 +299,8 @@ header li:hover {
 .championImgs__img {
   height: 97%;
   padding-bottom: 2.4rem;
-  animation: up-down 1.2s ease-in-out infinite alternate;
+  animation: zoom 400ms ease-in;
+  /* animation: up-down 1.2s ease-in-out infinite alternate; */
 }
 
 .championImgs__bio {
