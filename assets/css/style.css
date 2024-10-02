@@ -5,14 +5,6 @@
   --dark-color-1: #181818;
   --dark-color-2: #242424;
 
-  /* Tailwind 300 */
-  --cor-adc: #fdba74;
-  --cor-mago: #93c5fd;
-  --cor-tank: #d8b4fe;
-  --cor-lutador: #fde047;
-  --cor-suporte: #6ee7b7;
-  --cor-assassino: #fca5a5;
-
   --gradient-right: linear-gradient(to right, #f86ca7, #f4d444);
   --gradient-top-right: linear-gradient(to top right, #f86ca7, #f4d444);
 
