@@ -109,6 +109,10 @@ header li:hover {
 }
 
 .hero__count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
   font-weight: 700;
   font-size: 1.6rem;
   border-radius: 2.4rem;
@@ -157,6 +161,7 @@ header li:hover {
   font-size: 1.4rem;
   border-radius: 0.4rem;
 
+  gap: 0.8rem;
   color: var(--text-color);
   background-color: var(--bg-color);
 
@@ -176,6 +181,20 @@ header li:hover {
 .hero__btn:hover {
   transform: translateY(-0.64rem);
   background-color: var(--dark-color-1);
+}
+
+.icons__circle {
+  width: 1.6rem;
+}
+
+.icons__img {
+  height: 2rem;
+  fill: var(--bg-color);
+}
+
+.icons__share {
+  height: 2rem;
+  fill: var(--text-color);
 }
 
 /* Galeria */
@@ -289,7 +308,7 @@ header li:hover {
 
 @keyframes zoom {
   from {
-    transform: scale(0.9);
+    transform: scale(0.64);
   }
 
   to {
@@ -326,6 +345,18 @@ footer {
 footer a {
   color: var(--purple);
   text-decoration: underline;
+}
+
+footer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.icons__linkedin {
+  height: 1.6rem;
+  fill: var(--text-color);
 }
 
 @media only screen and (max-width: 468px) {
