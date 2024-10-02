@@ -58,39 +58,6 @@ body {
   background-image: var(--gradient-right);
 }
 
-.btn {
-  all: unset;
-}
-
-.btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  font-weight: 400;
-  font-size: 1.4rem;
-  border-radius: 0.4rem;
-
-  background: var(--gray);
-  color: var(--text-color);
-
-  height: 4rem;
-  width: 16rem;
-  cursor: pointer;
-
-  transition: all 240ms linear;
-  box-shadow: var(--box);
-}
-
-.btn:first-of-type {
-  font-weight: 700;
-  color: var(--bg-color);
-}
-
-.btn:hover {
-  background-color: var(--dark-color-1);
-}
-
 /* Header */
 
 header {
@@ -165,7 +132,7 @@ header li:hover {
 }
 
 .hero__btns {
-  gap: 0.8rem;
+  gap: 1.2rem;
   display: flex;
 }
 
@@ -175,6 +142,40 @@ header li:hover {
 
 .hero__btns a:first-of-type:hover {
   background: var(--gradient-right);
+}
+
+.hero__btn {
+  all: unset;
+}
+
+.hero__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 400;
+  font-size: 1.4rem;
+  border-radius: 0.4rem;
+
+  color: var(--text-color);
+  background-color: var(--bg-color);
+
+  height: 4rem;
+  width: 16rem;
+  cursor: pointer;
+
+  transition: ease 320ms;
+  box-shadow: var(--box);
+}
+
+.hero__btn:first-of-type {
+  font-weight: 700;
+  color: var(--bg-color);
+}
+
+.hero__btn:hover {
+  transform: translateY(-0.64rem);
+  background-color: var(--dark-color-1);
 }
 
 /* Galeria */
@@ -216,12 +217,13 @@ header li:hover {
   user-select: none;
   font-size: 1.4rem;
   border-radius: 0.4rem;
-  transition: ease 400ms;
+  transition: ease 320ms;
   box-shadow: var(--box);
 }
 
 .classesBtns__btn:hover {
   transform: translateY(-0.64rem);
+  background-color: var(--dark-color-1);
 }
 
 /* Champions Btns */
@@ -252,6 +254,7 @@ header li:hover {
 
 .championsBtns__btn:hover {
   transform: translateY(-0.64rem);
+  background-color: var(--dark-color-1);
 }
 
 .active {
