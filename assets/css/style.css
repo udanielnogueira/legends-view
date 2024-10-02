@@ -4,21 +4,21 @@
   /* zinc 950 */
   --bg-color: #09090b;
 
+  /* zinc 100 */
+  --text-color: #f4f4f5;
+
   /* zinc 900 */
   --dark-color-1: #18181b;
 
   /* zinc 800 */
   --dark-color-2: #27272a;
 
-  /* zinc 100 */
-  --text-color: #f4f4f5;
-
   --gradient-right: linear-gradient(to right, #f86ca7, #f4d444);
+
   --gradient-top-right: linear-gradient(to top right, #f86ca7, #f4d444);
 
-  --box-shadow-gray: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.1),
-    0 0.4rem 0.4rem rgba(0, 0, 0, 0.1), 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1),
-    0 0 0 0.1rem rgba(0, 0, 0, 0.1),
+  --box: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.1), 0 0.4rem 0.4rem rgba(0, 0, 0, 0.1),
+    0 0.2rem 0.2rem rgba(0, 0, 0, 0.1), 0 0 0 0.1rem rgba(0, 0, 0, 0.1),
     inset 0 0 0 0.1rem rgba(255, 255, 255, 0.03),
     inset 0 0.1rem 0 rgba(255, 255, 255, 0.03);
 }
@@ -79,7 +79,7 @@ body {
   cursor: pointer;
 
   transition: all 240ms linear;
-  box-shadow: var(--box-shadow-gray);
+  box-shadow: var(--box);
 }
 
 .btn:first-of-type {
@@ -126,6 +126,7 @@ header li:hover {
   from {
     transform: translateY(-0.64rem);
   }
+
   to {
     transform: translateY(0.64rem);
   }
@@ -142,7 +143,7 @@ header li:hover {
 
 .hero__count {
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   border-radius: 2.4rem;
   padding: 0.4rem 1.6rem;
   border: 0.2rem solid var(--dark-color-1);
@@ -159,7 +160,7 @@ header li:hover {
 .hero__text {
   font-weight: 300;
   max-width: 96rem;
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   text-align: center;
 }
 
@@ -186,7 +187,7 @@ header li:hover {
 .galeria__title {
   flex-wrap: wrap;
   font-weight: 400;
-  font-size: 3.2rem;
+  font-size: 2.4rem;
   text-align: center;
   margin-bottom: 4rem;
 }
@@ -216,7 +217,7 @@ header li:hover {
   font-size: 1.4rem;
   border-radius: 0.4rem;
   transition: ease 400ms;
-  box-shadow: var(--box-shadow-gray);
+  box-shadow: var(--box);
 }
 
 .classesBtns__btn:hover {
@@ -246,7 +247,7 @@ header li:hover {
   font-size: 1.4rem;
   border-radius: 0.4rem;
   transition: ease 320ms;
-  box-shadow: var(--box-shadow-gray);
+  box-shadow: var(--box);
 }
 
 .championsBtns__btn:hover {
@@ -287,6 +288,7 @@ header li:hover {
   from {
     transform: scale(0.9);
   }
+
   to {
     transform: scale(1);
   }
@@ -296,6 +298,7 @@ header li:hover {
   from {
     transform: translateY(-0.8rem);
   }
+
   to {
     transform: translateY(0.8rem);
   }
