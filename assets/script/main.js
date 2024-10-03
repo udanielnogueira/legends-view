@@ -1,34 +1,34 @@
-var audio = new Audio("./assets/audio/ui-click.mp3");
+var audio = new Audio('./assets/audio/ui-click.mp3');
 function playUIClick() {
   audio.play();
 }
 
-const adcBtn = document.querySelector(".--adc");
-const magoBtn = document.querySelector(".--mago");
-const suporteBtn = document.querySelector(".--suporte");
-const assassinoBtn = document.querySelector(".--assassino");
-const lutadorBtn = document.querySelector(".--lutador");
-const tankBtn = document.querySelector(".--tank");
+const adcBtn = document.querySelector('.--adc');
+const magoBtn = document.querySelector('.--mago');
+const suporteBtn = document.querySelector('.--suporte');
+const assassinoBtn = document.querySelector('.--assassino');
+const lutadorBtn = document.querySelector('.--lutador');
+const tankBtn = document.querySelector('.--tank');
 
-const classesBtns = document.querySelectorAll(".classesBtns__btn");
+const classesBtns = document.querySelectorAll('.classesBtns__btn');
 console.log(classesBtns);
 
-const championsBtns = document.querySelector(".championsBtns");
+const championsBtns = document.querySelector('.championsBtns');
 console.log(championsBtns);
 
-const championImgs = document.querySelector(".championImgs");
+const championImgs = document.querySelector('.championImgs');
 console.log(championImgs);
 
 // Exibir Champions Btns
 
 function exibirAdc() {
   classesBtns.forEach((element) => {
-    element.classList.remove("active");
+    element.classList.remove('active');
   });
-  adcBtn.classList.add("active");
+  adcBtn.classList.add('active');
 
-  championImgs.innerHTML = "Selecione um campeão";
-  championsBtns.innerHTML = "";
+  championImgs.innerHTML = 'Selecione um campeão';
+  championsBtns.innerHTML = '';
   for (let atirador of atiradores) {
     championsBtns.innerHTML += `
       <div class="championsBtns__btn championsBtns__adc" onclick="playUIClick(), exibirAdcImg(this)">${atirador.nome}</div>
@@ -38,12 +38,12 @@ function exibirAdc() {
 
 function exibirMago() {
   classesBtns.forEach((element) => {
-    element.classList.remove("active");
+    element.classList.remove('active');
   });
-  magoBtn.classList.add("active");
+  magoBtn.classList.add('active');
 
-  championImgs.innerHTML = "Selecione um campeão";
-  championsBtns.innerHTML = "";
+  championImgs.innerHTML = 'Selecione um campeão';
+  championsBtns.innerHTML = '';
   for (let mago of magos) {
     championsBtns.innerHTML += `
       <div class="championsBtns__btn championsBtns__mago" onclick="playUIClick(), exibirMagoImg(this)">${mago.nome}</div>
@@ -53,12 +53,12 @@ function exibirMago() {
 
 function exibirAssassino() {
   classesBtns.forEach((element) => {
-    element.classList.remove("active");
+    element.classList.remove('active');
   });
-  assassinoBtn.classList.add("active");
+  assassinoBtn.classList.add('active');
 
-  championImgs.innerHTML = "Selecione um campeão";
-  championsBtns.innerHTML = "";
+  championImgs.innerHTML = 'Selecione um campeão';
+  championsBtns.innerHTML = '';
   for (let assassino of assassinos) {
     championsBtns.innerHTML += `
       <div class="championsBtns__btn championsBtns__assassino" onclick="playUIClick(), exibirAssassinoImg(this)">${assassino.nome}</div>
@@ -68,12 +68,12 @@ function exibirAssassino() {
 
 function exibirLutador() {
   classesBtns.forEach((element) => {
-    element.classList.remove("active");
+    element.classList.remove('active');
   });
-  lutadorBtn.classList.add("active");
+  lutadorBtn.classList.add('active');
 
-  championImgs.innerHTML = "Selecione um campeão";
-  championsBtns.innerHTML = "";
+  championImgs.innerHTML = 'Selecione um campeão';
+  championsBtns.innerHTML = '';
   for (let lutador of lutadores) {
     championsBtns.innerHTML += `
       <div class="championsBtns__btn championsBtns__lutador" onclick="playUIClick(), exibirLutadorImg(this)">${lutador.nome}</div>
@@ -83,12 +83,12 @@ function exibirLutador() {
 
 function exibirSuporte() {
   classesBtns.forEach((element) => {
-    element.classList.remove("active");
+    element.classList.remove('active');
   });
-  suporteBtn.classList.add("active");
+  suporteBtn.classList.add('active');
 
-  championImgs.innerHTML = "Selecione um campeão";
-  championsBtns.innerHTML = "";
+  championImgs.innerHTML = 'Selecione um campeão';
+  championsBtns.innerHTML = '';
   for (let suporte of suportes) {
     championsBtns.innerHTML += `
       <div class="championsBtns__btn championsBtns__suporte" onclick="playUIClick(), exibirSuporteImg(this)">${suporte.nome}</div>
@@ -98,12 +98,12 @@ function exibirSuporte() {
 
 function exibirTank() {
   classesBtns.forEach((element) => {
-    element.classList.remove("active");
+    element.classList.remove('active');
   });
-  tankBtn.classList.add("active");
+  tankBtn.classList.add('active');
 
-  championImgs.innerHTML = "Selecione um campeão";
-  championsBtns.innerHTML = "";
+  championImgs.innerHTML = 'Selecione um campeão';
+  championsBtns.innerHTML = '';
   for (let tank of tanks) {
     championsBtns.innerHTML += `
       <div class="championsBtns__btn championsBtns__tank" onclick="playUIClick(), exibirTankImg(this)">${tank.nome}</div>
@@ -114,11 +114,11 @@ function exibirTank() {
 // Champions Imgs
 
 function exibirAdcImg(elemento) {
-  const arrayChampionsBtns = document.querySelectorAll(".championsBtns__btn");
+  const arrayChampionsBtns = document.querySelectorAll('.championsBtns__btn');
   arrayChampionsBtns.forEach((btn) => {
-    btn.classList.remove("active");
+    btn.classList.remove('active');
   });
-  elemento.classList.add("active");
+  elemento.classList.add('active');
 
   for (let atirador of atiradores) {
     if (atirador.nome == elemento.innerHTML) {
@@ -131,11 +131,11 @@ function exibirAdcImg(elemento) {
 }
 
 function exibirMagoImg(elemento) {
-  const arrayChampionsBtns = document.querySelectorAll(".championsBtns__btn");
+  const arrayChampionsBtns = document.querySelectorAll('.championsBtns__btn');
   arrayChampionsBtns.forEach((btn) => {
-    btn.classList.remove("active");
+    btn.classList.remove('active');
   });
-  elemento.classList.add("active");
+  elemento.classList.add('active');
 
   for (let mago of magos) {
     if (mago.nome == elemento.innerHTML) {
@@ -148,11 +148,11 @@ function exibirMagoImg(elemento) {
 }
 
 function exibirAssassinoImg(elemento) {
-  const arrayChampionsBtns = document.querySelectorAll(".championsBtns__btn");
+  const arrayChampionsBtns = document.querySelectorAll('.championsBtns__btn');
   arrayChampionsBtns.forEach((btn) => {
-    btn.classList.remove("active");
+    btn.classList.remove('active');
   });
-  elemento.classList.add("active");
+  elemento.classList.add('active');
 
   for (let assassino of assassinos) {
     if (assassino.nome == elemento.innerHTML) {
@@ -165,11 +165,11 @@ function exibirAssassinoImg(elemento) {
 }
 
 function exibirLutadorImg(elemento) {
-  const arrayChampionsBtns = document.querySelectorAll(".championsBtns__btn");
+  const arrayChampionsBtns = document.querySelectorAll('.championsBtns__btn');
   arrayChampionsBtns.forEach((btn) => {
-    btn.classList.remove("active");
+    btn.classList.remove('active');
   });
-  elemento.classList.add("active");
+  elemento.classList.add('active');
 
   for (let lutador of lutadores) {
     if (lutador.nome == elemento.innerHTML) {
@@ -182,11 +182,11 @@ function exibirLutadorImg(elemento) {
 }
 
 function exibirSuporteImg(elemento) {
-  const arrayChampionsBtns = document.querySelectorAll(".championsBtns__btn");
+  const arrayChampionsBtns = document.querySelectorAll('.championsBtns__btn');
   arrayChampionsBtns.forEach((btn) => {
-    btn.classList.remove("active");
+    btn.classList.remove('active');
   });
-  elemento.classList.add("active");
+  elemento.classList.add('active');
 
   for (let suporte of suportes) {
     if (suporte.nome == elemento.innerHTML) {
@@ -199,11 +199,11 @@ function exibirSuporteImg(elemento) {
 }
 
 function exibirTankImg(elemento) {
-  const arrayChampionsBtns = document.querySelectorAll(".championsBtns__btn");
+  const arrayChampionsBtns = document.querySelectorAll('.championsBtns__btn');
   arrayChampionsBtns.forEach((btn) => {
-    btn.classList.remove("active");
+    btn.classList.remove('active');
   });
-  elemento.classList.add("active");
+  elemento.classList.add('active');
 
   for (let tank of tanks) {
     if (tank.nome == elemento.innerHTML) {
@@ -219,11 +219,11 @@ function share() {
   if (navigator.share !== undefined) {
     navigator
       .share({
-        title: "Legends View",
-        text: "A nova galeria de campeões do LoL!",
-        url: "https://udanielnogueira.github.io/legends-view/",
+        title: 'Legends View',
+        text: 'A nova galeria de campeões do LoL!',
+        url: 'https://udanielnogueira.github.io/legends-view/',
       })
-      .then(() => console.log("Successful share"))
-      .catch((error) => console.log("Error sharing", error));
+      .then(() => console.log('Successful share'))
+      .catch((error) => console.log('Error sharing', error));
   }
 }
