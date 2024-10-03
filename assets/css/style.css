@@ -254,6 +254,7 @@ header li:hover {
   box-shadow: var(--box);
   transition: ease 320ms;
   border-radius: 0.4rem;
+  user-select: none;
   font-size: 1.4rem;
   padding: 0 1.6rem;
   font-weight: 300;
@@ -274,7 +275,7 @@ header li:hover {
 
 /* Champion Images */
 
-.championImgs {
+.championContent {
   height: 56rem;
   display: flex;
   max-width: 80rem;
@@ -286,13 +287,13 @@ header li:hover {
   margin-bottom: 6.4rem;
 }
 
-.championImgs__img {
+.championContent__img {
   height: 97%;
   padding-bottom: 2.4rem;
   animation: zoom 400ms ease-in;
 }
 
-.championImgs__bio {
+.championContent__bio {
   height: 3%;
 }
 
@@ -373,7 +374,7 @@ footer p {
     font-size: 1.6rem;
   }
 
-  .championImgs__img {
+  .championContent__img {
     height: unset;
     max-width: 100%;
     max-height: 100%;
@@ -394,22 +395,22 @@ footer p {
     margin-bottom: 2.4rem;
   }
 
-  .championImgs {
+  .championContent {
     height: 48rem;
     max-width: unset;
     margin-bottom: 3.2rem;
     max-width: 100%;
   }
 
-  .championImgs__img {
+  .championContent__img {
     max-height: 95%;
   }
 
-  .championImgs p {
+  .championContent p {
     font-size: 1.4rem;
   }
 
-  .championImgs__bio {
+  .championContent__bio {
     height: 5%;
     font-size: 1.4rem;
   }

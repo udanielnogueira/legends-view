@@ -16,8 +16,8 @@ console.log(classesBtns);
 const championsBtns = document.querySelector('.championsBtns');
 console.log(championsBtns);
 
-const championImgs = document.querySelector('.championImgs');
-console.log(championImgs);
+const championContent = document.querySelector('.championContent');
+console.log(championContent);
 
 // Exibir Champions Btns
 
@@ -27,7 +27,7 @@ function exibirAdc() {
   });
   adcBtn.classList.add('active');
 
-  championImgs.innerHTML = 'Selecione um campeão';
+  championContent.innerHTML = 'Selecione um campeão';
   championsBtns.innerHTML = '';
   for (let atirador of atiradores) {
     championsBtns.innerHTML += `
@@ -42,7 +42,7 @@ function exibirMago() {
   });
   magoBtn.classList.add('active');
 
-  championImgs.innerHTML = 'Selecione um campeão';
+  championContent.innerHTML = 'Selecione um campeão';
   championsBtns.innerHTML = '';
   for (let mago of magos) {
     championsBtns.innerHTML += `
@@ -57,7 +57,7 @@ function exibirAssassino() {
   });
   assassinoBtn.classList.add('active');
 
-  championImgs.innerHTML = 'Selecione um campeão';
+  championContent.innerHTML = 'Selecione um campeão';
   championsBtns.innerHTML = '';
   for (let assassino of assassinos) {
     championsBtns.innerHTML += `
@@ -72,7 +72,7 @@ function exibirLutador() {
   });
   lutadorBtn.classList.add('active');
 
-  championImgs.innerHTML = 'Selecione um campeão';
+  championContent.innerHTML = 'Selecione um campeão';
   championsBtns.innerHTML = '';
   for (let lutador of lutadores) {
     championsBtns.innerHTML += `
@@ -87,7 +87,7 @@ function exibirSuporte() {
   });
   suporteBtn.classList.add('active');
 
-  championImgs.innerHTML = 'Selecione um campeão';
+  championContent.innerHTML = 'Selecione um campeão';
   championsBtns.innerHTML = '';
   for (let suporte of suportes) {
     championsBtns.innerHTML += `
@@ -102,7 +102,7 @@ function exibirTank() {
   });
   tankBtn.classList.add('active');
 
-  championImgs.innerHTML = 'Selecione um campeão';
+  championContent.innerHTML = 'Selecione um campeão';
   championsBtns.innerHTML = '';
   for (let tank of tanks) {
     championsBtns.innerHTML += `
@@ -122,9 +122,9 @@ function exibirAdcImg(elemento) {
 
   for (let atirador of atiradores) {
     if (atirador.nome == elemento.innerHTML) {
-      championImgs.innerHTML = `
-      <img src="${atirador.src}" alt="${atirador.nome}" title="${atirador.nome}" class="championImgs__img" />
-      <p class="championImgs__bio">${atirador.bio}</p>
+      championContent.innerHTML = `
+      <img src="${atirador.src}" alt="${atirador.nome}" title="${atirador.nome}" class="championContent__img" />
+      <p class="championContent__bio">${atirador.bio}</p>
       `;
     }
   }
@@ -139,9 +139,9 @@ function exibirMagoImg(elemento) {
 
   for (let mago of magos) {
     if (mago.nome == elemento.innerHTML) {
-      championImgs.innerHTML = `
-      <img src="${mago.src}" alt="${mago.nome}" title="${mago.nome}" class="championImgs__img" />
-      <p class="championImgs__bio">${mago.bio}</p>
+      championContent.innerHTML = `
+      <img src="${mago.src}" alt="${mago.nome}" title="${mago.nome}" class="championContent__img" />
+      <p class="championContent__bio">${mago.bio}</p>
       `;
     }
   }
@@ -156,9 +156,9 @@ function exibirAssassinoImg(elemento) {
 
   for (let assassino of assassinos) {
     if (assassino.nome == elemento.innerHTML) {
-      championImgs.innerHTML = `
-      <img src="${assassino.src}" alt="${assassino.nome}" title="${assassino.nome}" class="championImgs__img" />
-      <p class="championImgs__bio">${assassino.bio}</p>
+      championContent.innerHTML = `
+      <img src="${assassino.src}" alt="${assassino.nome}" title="${assassino.nome}" class="championContent__img" />
+      <p class="championContent__bio">${assassino.bio}</p>
       `;
     }
   }
@@ -173,9 +173,9 @@ function exibirLutadorImg(elemento) {
 
   for (let lutador of lutadores) {
     if (lutador.nome == elemento.innerHTML) {
-      championImgs.innerHTML = `
-      <img src="${lutador.src}" alt="${lutador.nome}" title="${lutador.nome}" class="championImgs__img" />
-      <p class="championImgs__bio">${lutador.bio}</p>
+      championContent.innerHTML = `
+      <img src="${lutador.src}" alt="${lutador.nome}" title="${lutador.nome}" class="championContent__img" />
+      <p class="championContent__bio">${lutador.bio}</p>
       `;
     }
   }
@@ -190,9 +190,9 @@ function exibirSuporteImg(elemento) {
 
   for (let suporte of suportes) {
     if (suporte.nome == elemento.innerHTML) {
-      championImgs.innerHTML = `
-      <img src="${suporte.src}" alt="${suporte.nome}" title="${suporte.nome}" class="championImgs__img" />
-      <p class="championImgs__bio">${suporte.bio}</p>
+      championContent.innerHTML = `
+      <img src="${suporte.src}" alt="${suporte.nome}" title="${suporte.nome}" class="championContent__img" />
+      <p class="championContent__bio">${suporte.bio}</p>
       `;
     }
   }
@@ -207,9 +207,9 @@ function exibirTankImg(elemento) {
 
   for (let tank of tanks) {
     if (tank.nome == elemento.innerHTML) {
-      championImgs.innerHTML = `
-      <img src="${tank.src}" alt="${tank.nome}" title="${tank.nome}" class="championImgs__img" />
-      <p class="championImgs__bio">${tank.bio}</p>
+      championContent.innerHTML = `
+      <img src="${tank.src}" alt="${tank.nome}" title="${tank.nome}" class="championContent__img" />
+      <p class="championContent__bio">${tank.bio}</p>
       `;
     }
   }
