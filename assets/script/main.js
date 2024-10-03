@@ -123,7 +123,7 @@ function exibirAdcImg(elemento) {
   for (let atirador of atiradores) {
     if (atirador.nome == elemento.innerHTML) {
       championImgs.innerHTML = `
-      <img src="${atirador.src}" alt="" class="championImgs__img" />
+      <img src="${atirador.src}" alt="${atirador.nome}" title="${atirador.nome}" class="championImgs__img" />
       <p class="championImgs__bio">${atirador.bio}</p>
       `;
     }
@@ -140,7 +140,7 @@ function exibirMagoImg(elemento) {
   for (let mago of magos) {
     if (mago.nome == elemento.innerHTML) {
       championImgs.innerHTML = `
-      <img src="${mago.src}" alt="" class="championImgs__img" />
+      <img src="${mago.src}" alt="${mago.nome}" title="${mago.nome}" class="championImgs__img" />
       <p class="championImgs__bio">${mago.bio}</p>
       `;
     }
@@ -157,7 +157,7 @@ function exibirAssassinoImg(elemento) {
   for (let assassino of assassinos) {
     if (assassino.nome == elemento.innerHTML) {
       championImgs.innerHTML = `
-      <img src="${assassino.src}" alt="" class="championImgs__img" />
+      <img src="${assassino.src}" alt="${assassino.nome}" title="${assassino.nome}" class="championImgs__img" />
       <p class="championImgs__bio">${assassino.bio}</p>
       `;
     }
@@ -174,7 +174,7 @@ function exibirLutadorImg(elemento) {
   for (let lutador of lutadores) {
     if (lutador.nome == elemento.innerHTML) {
       championImgs.innerHTML = `
-      <img src="${lutador.src}" alt="" class="championImgs__img" />
+      <img src="${lutador.src}" alt="${lutador.nome}" title="${lutador.nome}" class="championImgs__img" />
       <p class="championImgs__bio">${lutador.bio}</p>
       `;
     }
@@ -191,7 +191,7 @@ function exibirSuporteImg(elemento) {
   for (let suporte of suportes) {
     if (suporte.nome == elemento.innerHTML) {
       championImgs.innerHTML = `
-      <img src="${suporte.src}" alt="" class="championImgs__img" />
+      <img src="${suporte.src}" alt="${suporte.nome}" title="${suporte.nome}" class="championImgs__img" />
       <p class="championImgs__bio">${suporte.bio}</p>
       `;
     }
@@ -208,7 +208,7 @@ function exibirTankImg(elemento) {
   for (let tank of tanks) {
     if (tank.nome == elemento.innerHTML) {
       championImgs.innerHTML = `
-      <img src="${tank.src}" alt="" class="championImgs__img" />
+      <img src="${tank.src}" alt="${tank.nome}" title="${tank.nome}" class="championImgs__img" />
       <p class="championImgs__bio">${tank.bio}</p>
       `;
     }
