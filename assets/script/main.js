@@ -10,16 +10,11 @@ const assassinoBtn = document.querySelector('.--assassino');
 const lutadorBtn = document.querySelector('.--lutador');
 const tankBtn = document.querySelector('.--tank');
 
-const classesBtns = document.querySelectorAll('.classesBtns__btn');
-console.log(classesBtns);
-
 const championsBtns = document.querySelector('.championsBtns');
-console.log(championsBtns);
-
+const classesBtns = document.querySelectorAll('.classesBtns__btn');
 const championContent = document.querySelector('.championContent');
-console.log(championContent);
 
-// Exibir Champions Btns
+// Champions Btns
 
 function exibirAdc() {
   classesBtns.forEach((element) => {
@@ -111,7 +106,7 @@ function exibirTank() {
   }
 }
 
-// Champions Imgs
+// Champions Content
 
 function exibirAdcImg(elemento) {
   const arrayChampionsBtns = document.querySelectorAll('.championsBtns__btn');
