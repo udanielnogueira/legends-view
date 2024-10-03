@@ -213,7 +213,7 @@ header li:hover {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-bottom: 4rem;
+  margin-bottom: 6.4rem;
   text-align: center;
   gap: 1.2rem;
 }
@@ -281,13 +281,13 @@ header li:hover {
 .championImgs {
   height: 56rem;
   display: flex;
+  max-width: 80rem;
   font-weight: 300;
   font-size: 1.6rem;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  max-width: 80rem;
-  margin-bottom: 4rem;
+  margin-bottom: 6.4rem;
 }
 
 .championImgs__img {
@@ -390,7 +390,7 @@ footer p {
   }
 
   .classesBtns {
-    margin-bottom: 2.4rem;
+    margin-bottom: 3.2rem;
   }
 
   .galeria__title {
@@ -400,7 +400,9 @@ footer p {
 
   .championImgs {
     height: 48rem;
+    max-width: 100%;
     max-width: unset;
+    margin-bottom: 3.2rem;
   }
 
   .championImgs__img {
@@ -412,8 +414,8 @@ footer p {
   }
 
   .championImgs__bio {
-    font-size: 1.4rem;
     height: 5%;
+    font-size: 1.4rem;
   }
 
   header,
