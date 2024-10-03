@@ -23,13 +23,13 @@
 
 <img src="./assets/img/desktop-mockup.png">
 
-O Legends View é uma aplicação que permite visualizar as classes e campeões do aclamado e mundialmente conhecido League of Legends, selecione uma classe e veja os campeões de Runeterra que batalham em Summoner's Rift.
+O Legends View é uma aplicação que permite visualizar as classes e campeões do conhecido jogo League of Legends, selecione uma classe e veja os campeões de Runeterra que batalham em Summoner's Rift.
 
 <h2 id="preview">Preview</h2>
 
 Desktop
 
-![Desktop Preview](./assets/img/desktop.png "Desktop Preview")
+![Desktop Preview](./assets/img/desktop.png 'Desktop Preview')
 
 Mobile
 
@@ -60,40 +60,40 @@ Criação de uma base de dados em JS.
 ```js
 let atiradores = [
   {
-    nome: "Ashe",
-    classe: ["atirador, suporte"],
-    src: "./assets/img/champions/ashe.png",
-    bio: "A Arqueira do Gelo, Ashe",
+    nome: 'Ashe',
+    classe: ['atirador, suporte'],
+    src: './assets/img/champions/ashe.png',
+    bio: 'A Arqueira do Gelo, Ashe',
   },
   {
-    nome: "Ezreal",
-    classe: ["atirador", "mago"],
-    src: "./assets/img/champions/ezreal.png",
-    bio: "O Explorador Pródigo, Ezreal",
+    nome: 'Ezreal',
+    classe: ['atirador', 'mago'],
+    src: './assets/img/champions/ezreal.png',
+    bio: 'O Explorador Pródigo, Ezreal',
   },
   {
-    nome: "Jayce",
-    classe: ["atirador", "lutador"],
-    src: "./assets/img/champions/jayce.png",
-    bio: "O Defensor do Amanhã, Jayce",
+    nome: 'Jayce',
+    classe: ['atirador', 'lutador'],
+    src: './assets/img/champions/jayce.png',
+    bio: 'O Defensor do Amanhã, Jayce',
   },
   {
-    nome: "Jinx",
-    classe: ["atirador"],
-    src: "./assets/img/champions/jinx.png",
-    bio: "O Gatilho Desenfreado, Jinx",
+    nome: 'Jinx',
+    classe: ['atirador'],
+    src: './assets/img/champions/jinx.png',
+    bio: 'O Gatilho Desenfreado, Jinx',
   },
   {
-    nome: "Lucian",
-    classe: ["atirador, assassino"],
-    src: "./assets/img/champions/lucian.png",
-    bio: "O Purificador, Lucian",
+    nome: 'Lucian',
+    classe: ['atirador, assassino'],
+    src: './assets/img/champions/lucian.png',
+    bio: 'O Purificador, Lucian',
   },
   {
-    nome: "Senna",
-    classe: ["atirador", "suporte"],
-    src: "./assets/img/champions/senna.png",
-    bio: "A Redentora, Senna",
+    nome: 'Senna',
+    classe: ['atirador', 'suporte'],
+    src: './assets/img/champions/senna.png',
+    bio: 'A Redentora, Senna',
   },
 ];
 ```
@@ -105,12 +105,12 @@ Adição de classes e Injeção de HTML via JS.
 ```js
 function exibirAdc() {
   classesBtns.forEach((element) => {
-    element.classList.remove("active");
+    element.classList.remove('active');
   });
-  adcBtn.classList.add("active");
+  adcBtn.classList.add('active');
 
-  championImgs.innerHTML = "Selecione um campeão";
-  championsBtns.innerHTML = "";
+  championImgs.innerHTML = 'Selecione um campeão';
+  championsBtns.innerHTML = '';
   for (let atirador of atiradores) {
     championsBtns.innerHTML += `
       <div class="championsBtns__btn championsBtns__adc" onclick="playUIClick(), exibirAdcImg(this)">${atirador.nome}</div>
@@ -124,7 +124,7 @@ function exibirAdc() {
 Função para disparar efeito sonoro.
 
 ```js
-var audio = new Audio("./assets/audio/ui-click.mp3");
+var audio = new Audio('./assets/audio/ui-click.mp3');
 function playUIClick() {
   audio.play();
 }
