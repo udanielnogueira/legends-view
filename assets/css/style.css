@@ -215,7 +215,7 @@ header li:hover {
   justify-content: center;
   margin-bottom: 4rem;
   text-align: center;
-  gap: 0.8rem;
+  gap: 1.2rem;
 }
 
 .classesBtns__btn {
@@ -246,7 +246,7 @@ header li:hover {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 0.8rem;
+  gap: 1.2rem;
 }
 
 .championsBtns__btn {
@@ -294,7 +294,6 @@ header li:hover {
   height: 97%;
   padding-bottom: 2.4rem;
   animation: zoom 400ms ease-in;
-  /* animation: up-down 1.2s ease-in-out infinite alternate; */
 }
 
 .championImgs__bio {
@@ -327,14 +326,14 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-top: solid 0.2rem var(--dark-color-1);
   flex-direction: column;
   text-align: center;
+  font-size: 1.4rem;
+  font-weight: 300;
+  max-width: 96rem;
   height: 8rem;
   width: 100%;
-  font-size: 1.4rem;
-  max-width: 96rem;
-  font-weight: 300;
-  border-top: solid 0.2rem var(--dark-color-1);
 }
 
 footer a {
@@ -419,10 +418,6 @@ footer p {
 
   header,
   .logo {
-    font-size: 1.4rem;
-  }
-
-  footer {
     font-size: 1.4rem;
   }
 }
