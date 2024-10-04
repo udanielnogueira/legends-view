@@ -26,7 +26,7 @@ function exibirAdc() {
   championsBtns.innerHTML = '';
   for (let atirador of atiradores) {
     championsBtns.innerHTML += `
-      <div class="championsBtns__btn championsBtns__adc" onclick="playUIClick(), exibirAdcImg(this)">${atirador.nome}</div>
+      <div class="championsBtns__btn" onclick="playUIClick(), exibirAdcImg(this)">${atirador.nome}</div>
       `;
   }
 }
@@ -41,7 +41,7 @@ function exibirMago() {
   championsBtns.innerHTML = '';
   for (let mago of magos) {
     championsBtns.innerHTML += `
-      <div class="championsBtns__btn championsBtns__mago" onclick="playUIClick(), exibirMagoImg(this)">${mago.nome}</div>
+      <div class="championsBtns__btn" onclick="playUIClick(), exibirMagoImg(this)">${mago.nome}</div>
       `;
   }
 }
@@ -56,7 +56,7 @@ function exibirAssassino() {
   championsBtns.innerHTML = '';
   for (let assassino of assassinos) {
     championsBtns.innerHTML += `
-      <div class="championsBtns__btn championsBtns__assassino" onclick="playUIClick(), exibirAssassinoImg(this)">${assassino.nome}</div>
+      <div class="championsBtns__btn" onclick="playUIClick(), exibirAssassinoImg(this)">${assassino.nome}</div>
       `;
   }
 }
@@ -71,7 +71,7 @@ function exibirLutador() {
   championsBtns.innerHTML = '';
   for (let lutador of lutadores) {
     championsBtns.innerHTML += `
-      <div class="championsBtns__btn championsBtns__lutador" onclick="playUIClick(), exibirLutadorImg(this)">${lutador.nome}</div>
+      <div class="championsBtns__btn" onclick="playUIClick(), exibirLutadorImg(this)">${lutador.nome}</div>
       `;
   }
 }
@@ -86,7 +86,7 @@ function exibirSuporte() {
   championsBtns.innerHTML = '';
   for (let suporte of suportes) {
     championsBtns.innerHTML += `
-      <div class="championsBtns__btn championsBtns__suporte" onclick="playUIClick(), exibirSuporteImg(this)">${suporte.nome}</div>
+      <div class="championsBtns__btn" onclick="playUIClick(), exibirSuporteImg(this)">${suporte.nome}</div>
       `;
   }
 }
@@ -101,7 +101,7 @@ function exibirTank() {
   championsBtns.innerHTML = '';
   for (let tank of tanks) {
     championsBtns.innerHTML += `
-      <div class="championsBtns__btn championsBtns__tank" onclick="playUIClick(), exibirTankImg(this)">${tank.nome}</div>
+      <div class="championsBtns__btn" onclick="playUIClick(), exibirTankImg(this)">${tank.nome}</div>
       `;
   }
 }
