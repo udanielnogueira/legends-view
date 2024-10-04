@@ -29,11 +29,11 @@ Uma aplicação que permite visualizar as classes e os campeões de League of Le
 
 Desktop
 
-![Desktop Preview](./assets/img/desktop.png 'Desktop Preview')
+![Desktop Preview](./assets/img/desktop-preview.png 'Desktop Preview')
 
 Mobile
 
-<img src="./assets/img/mobile.png">
+<img src="./assets/img/mobile-preview.png">
 
 <h2 id="built-with">Tecnologias</h2>
 
