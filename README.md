@@ -109,12 +109,11 @@ function exibirAdc() {
   });
   adcBtn.classList.add('active');
 
-  championContent.innerHTML = 'Selecione um campeão';
   championsBtns.innerHTML = '';
+  championContent.innerHTML = 'Selecione um campeão';
+
   for (let atirador of atiradores) {
-    championsBtns.innerHTML += `
-      <div class="championsBtns__btn championsBtns__adc" onclick="playUIClick(), exibirAdcImg(this)">${atirador.nome}</div>
-      `;
+    championsBtns.innerHTML += `<div class="championsBtns__btn championsBtns__adc" onclick="playUIClick(), exibirAdcImg(this)">${atirador.nome}</div>`;
   }
 }
 ```
