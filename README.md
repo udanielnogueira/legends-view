@@ -113,7 +113,7 @@ function exibirAdc() {
   championContent.innerHTML = 'Selecione um campeão';
 
   for (let atirador of atiradores) {
-    championsBtns.innerHTML += `<div class="championsBtns__btn championsBtns__adc" onclick="playUIClick(), exibirAdcImg(this)">${atirador.nome}</div>`;
+    championsBtns.innerHTML += `<div class="championsBtns__btn" onclick="playUIClick(), exibirAdcImg(this)">${atirador.nome}</div>`;
   }
 }
 ```
