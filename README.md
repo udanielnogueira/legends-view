@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>⚔️ Legends View</h1>
+  <h1>🛡️ Legends View</h1>
   <p>Uma galeria dos campeões de League of Legends.</p>
   <img src="https://img.shields.io/github/languages/count/udanielnogueira/legends-view">
   <img src="https://img.shields.io/github/languages/top/udanielnogueira/legends-view">
@@ -23,7 +23,7 @@
 
 <img src="./assets/img/desktop-mockup.png">
 
-O Legends View é uma aplicação que permite visualizar as classes e campeões do conhecido jogo League of Legends, selecione uma classe e veja os campeões de Runeterra que batalham em Summoner's Rift.
+Uma aplicação que permite visualizar as classes e os campeões de League of Legends.
 
 <h2 id="preview">Preview</h2>
 
@@ -109,7 +109,7 @@ function exibirAdc() {
   });
   adcBtn.classList.add('active');
 
-  championImgs.innerHTML = 'Selecione um campeão';
+  championContent.innerHTML = 'Selecione um campeão';
   championsBtns.innerHTML = '';
   for (let atirador of atiradores) {
     championsBtns.innerHTML += `
