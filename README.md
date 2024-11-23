@@ -1,12 +1,12 @@
 <div align="center">
   <h1>🛡️ Legends View</h1>
-  <p>Uma galeria dos campeões de League of Legends.</p>
   <img src="https://img.shields.io/github/languages/count/udanielnogueira/legends-view">
   <img src="https://img.shields.io/github/languages/top/udanielnogueira/legends-view">
   <img src="https://img.shields.io/github/languages/code-size/udanielnogueira/legends-view">
   <img src="https://img.shields.io/github/last-commit/udanielnogueira/legends-view">
   <img src="https://img.shields.io/github/deployments/udanielnogueira/legends-view/github-pages">
   <img src="https://img.shields.io/badge/responsive-yes-ff69b4">
+  <p>Uma galeria dos campeões de League of Legends.</p>
 </div>
 
 ## Sumário
@@ -27,11 +27,13 @@ Uma aplicação que permite visualizar as classes e os campeões de League of Le
 
 <h2 id="preview">Preview</h2>
 
-Desktop
+Desktop Preview
 
 ![Desktop Preview](./assets/img/desktop-preview.png 'Desktop Preview')
 
-Mobile
+<br>
+
+Mobile Preview
 
 <img src="./assets/img/mobile-preview.png">
 
@@ -49,13 +51,11 @@ Mobile
 
 <h2 id="deploy">Deploy</h2>
 
-Acesse o Legends View no link abaixo
-
 [Legends View](https://udanielnogueira.github.io/legends-view/)
 
 <h2 id="highlights">Destaques</h2>
 
-Criação de uma base de dados em JS.
+Criação de uma base de dados em JS
 
 ```js
 let atiradores = [
@@ -100,7 +100,7 @@ let atiradores = [
 
 <br>
 
-Adição de classes e Injeção de HTML via JS.
+Adição de classes e Inserção de HTML via JS
 
 ```js
 function exibirAdc() {
@@ -120,7 +120,7 @@ function exibirAdc() {
 
 <br>
 
-Função para disparar efeito sonoro.
+Função para disparar efeito sonoro
 
 ```js
 var audio = new Audio('./assets/audio/ui-click.mp3');
