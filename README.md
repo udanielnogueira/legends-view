@@ -6,7 +6,7 @@
   <img src="https://img.shields.io/github/last-commit/udanielnogueira/legends-view">
   <img src="https://img.shields.io/github/deployments/udanielnogueira/legends-view/github-pages">
   <img src="https://img.shields.io/badge/responsive-yes-ff69b4">
-  <p>Uma galeria dos campeões de League of Legends.</p>
+  <p>Uma galeria de imagens dos campeões de League of Legends.</p>
 </div>
 
 ## Sumário
@@ -21,9 +21,9 @@
 
 <h2 id="about">Sobre</h2>
 
-<img src="./assets/img/desktop-mockup.png">
-
 Uma aplicação que permite visualizar as classes e os campeões de League of Legends.
+
+<img src="./assets/img/desktop-mockup.png">
 
 <h2 id="preview">Preview</h2>
 
