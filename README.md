@@ -51,7 +51,7 @@ Mobile Preview
 
 <h2 id="deploy">Deploy</h2>
 
-[Legends View](https://udanielnogueira.github.io/legends-view/)
+[Legends View](https://legends-view.vercel.app/)
 
 <h2 id="highlights">Destaques</h2>
 
