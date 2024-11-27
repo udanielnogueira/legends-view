@@ -216,7 +216,7 @@ function share() {
       .share({
         title: 'Legends View',
         text: 'A nova galeria de campeões do LoL!',
-        url: 'https://udanielnogueira.github.io/legends-view/',
+        url: 'https://legends-view.vercel.app/',
       })
       .then(() => console.log('Successful share'))
       .catch((error) => console.log('Error sharing', error));
